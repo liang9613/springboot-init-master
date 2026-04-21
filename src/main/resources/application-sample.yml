@@ -1,0 +1,28 @@
+server:
+  port: 8101
+  servlet:
+    session:
+      cookie:
+        max-age: 2592000
+        #跨域问题
+        same-site: none
+        secure: true
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+mybatis-plus:
+  configuration:
+        # 生产环境关闭日志
+    log-impl: ''
+knife4j:
+  basic:
+    enable: true
+    username: ${SWAGGER_USER}
+    password: ${SWAGGER_PASS}
+
+ai:
+  api-key: ${API_KEY}
