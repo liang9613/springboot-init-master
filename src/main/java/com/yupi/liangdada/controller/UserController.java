@@ -19,6 +19,7 @@ import com.yupi.liangdada.model.dto.user.UserUpdateRequest;
 import com.yupi.liangdada.model.entity.User;
 import com.yupi.liangdada.model.vo.LoginUserVO;
 import com.yupi.liangdada.model.vo.UserVO;
+import com.yupi.liangdada.scoring.ScoringStrategyExecutor;
 import com.yupi.liangdada.service.UserService;
 
 import java.util.List;
@@ -51,8 +52,6 @@ public class UserController {
     @Resource
     private UserService userService;
 
-    @Resource
-    private WxOpenConfig wxOpenConfig;
 
     // region 登录相关
 
